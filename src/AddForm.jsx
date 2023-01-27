@@ -21,12 +21,7 @@ export default function AddForm({ list, setList, nextId }) {
   };
 
   const onQuantChange = (event) => {
-    if (isNaN(event.target.value)) {
-      setQuantInputItem('')
-      alert("Please enter a numeric value");
-    } else {
       setQuantInputItem(parseInt(event.target.value))
-    }
   };
 
   const onRadioChange = (event) => {

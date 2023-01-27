@@ -12,7 +12,7 @@ export default function ItemType({
         <>
             {
                 type === "quantitative" &&
-                <input value={quantValue} onChange={onQuantChange} placeholder={quantPlaceholder} />
+                <input type="number" value={quantValue} onChange={onQuantChange} placeholder={quantPlaceholder} />
             }
             <input value={value} defaultChecked placeholder={placeholder} onChange={onInputChange} />
         </>
